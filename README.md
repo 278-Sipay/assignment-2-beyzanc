@@ -1,6 +1,6 @@
 # Sipay&Patika.dev .NET Bootcamp - Case #2: Transactin Filter API
 
-This is a transaction API project that allows users to retrieve transactions based on various filtering criteria. The API exposes a GetByParameter endpoint in the TransactionController, which accepts query parameters to filter transactions based on specific criteria, such as account number, credit amount, debit amount, description, transaction date, and reference number.
+This is a transaction API project that allows users to retrieve transactions based on various filtering criteria. The API exposes a *GetByParameter endpoint* in the TransactionController, which accepts *query parameters* to filter transactions based on specific criteria, such as account number, credit amount, debit amount, description, transaction date, and reference number.
 
 The project is built using ASP.NET Core with Entity Framework Core for data access. The data models are defined using the Code-First approach with a database context class representing the database schema. The Generic Repository pattern is implemented to provide common CRUD operations for entities, and the TransactionRepository extends the generic repository to add filtering capabilities for transactions.
 
@@ -27,7 +27,7 @@ dotnet ef database update
 
 ## Query Parameters
 
-The Transaction API supports various endpoints, but for this assignment, the main API to utilize is the GetByParameter method, which allows users to filter transactions based on different criteria. The supported filter criteria are:
+The Transaction API supports various endpoints, but for this assignment, the main API to utilize is the **GetByParameter** method, which allows users to filter transactions based on different criteria. The supported filter criteria are:
 
 - **AccountNumber:** Exact match filter for the account number.
 - **MinAmountCredit, MaxAmountCredit:** Range filter for credit amount.
@@ -36,7 +36,7 @@ The Transaction API supports various endpoints, but for this assignment, the mai
 - **BeginDate, EndDate:** Range filter for the transaction date.
 - **ReferenceNumber:** Exact match filter for the reference number.
 
-You can make a GET request to the endpoint **/sipay/api/transaction/GetByParameter** and pass the filter criteria as query parameters. The API will then return a list of transactions that match the provided filters.
+You can make a GET request to the endpoint **/sipay/api/transaction/GetByParameter** and pass the filter criteria ***as query parameters***. The API will then return a list of transactions that match the provided filters.
 
 ## Some Example Filtering Scenarios:
 
@@ -84,7 +84,7 @@ In this project, LINQ is primarily employed within the TransactionRepository cla
 
 ## Idempotence
 
-The project follows the principles of idempotence, which means that calling the same API endpoint multiple times with the same parameters will yield the same results. The **GetByParameter endpoint** is designed to be ***idempotent***, meaning that multiple identical requests will not create any unintended side effects, and the returned data will remain consistent.
+The project follows the principles of idempotence, which means that calling the same API endpoint multiple times with the same parameters will yield the same results and not cause inconsistency. The **GetByParameter endpoint** is designed to be ***idempotent***, meaning that multiple identical requests will not create any unintended side effects, and the returned data will remain consistent.
 
 ## Object-Oriented Programming in the TransactionApi Project
 
