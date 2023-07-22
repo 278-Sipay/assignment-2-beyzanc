@@ -32,10 +32,5 @@ namespace TransactionApi.Data
 
             base.OnModelCreating(modelBuilder);
         }
-
-        internal IEnumerable<Transaction> GetByParameter(Expression<Func<Transaction, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
