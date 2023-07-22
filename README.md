@@ -50,7 +50,7 @@ You can make a GET request to the endpoint **/sipay/api/transaction/GetByParamet
 
 - Filter transactions with a reference number and a minimum credit amount:
 
-`GET sipay/api/Transaction/GetByParameter?referenceNumber=12345&minAmountCredit=200`
+`GET sipay/api/Transaction/GetByParameter?referenceNumber=A012345&minAmountCredit=200`
 
 - Retrieve transactions with a specific account number and a range of debit amounts:
 
@@ -58,7 +58,7 @@ You can make a GET request to the endpoint **/sipay/api/transaction/GetByParamet
 
 - Search for transactions with a description containing a keyword and a reference number:
 
-`GET sipay/api/Transaction/GetByParameter?description=Transfer&referenceNumber=56789`
+`GET sipay/api/Transaction/GetByParameter?description=Transfer&referenceNumber=XYZ56789`
 
 - Filter transactions within a date range and with a specific account number:
 
