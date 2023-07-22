@@ -25,16 +25,16 @@ dotnet ef database update
 6. Access the GetByParameter endpoint with the required query parameters to retrieve filtered transactions.
 
 
-## Usage
+## Query Parameters
 
 The Transaction API supports various endpoints, but for this assignment, the main API to utilize is the GetByParameter method, which allows users to filter transactions based on different criteria. The supported filter criteria are:
 
-- AccountNumber: Exact match filter for the account number.
-- MinAmountCredit, MaxAmountCredit: Range filter for credit amount.
-- MinAmountDebit, MaxAmountDebit: Range filter for debit amount.
-- Description: Filter by a partial match of the transaction description.
-- BeginDate, EndDate: Range filter for the transaction date.
-- ReferenceNumber: Exact match filter for the reference number.
+- **AccountNumber:** Exact match filter for the account number.
+- **MinAmountCredit, MaxAmountCredit:** Range filter for credit amount.
+- **MinAmountDebit, MaxAmountDebit:** Range filter for debit amount.
+- **Description:** Filter by a partial match of the transaction description.
+- **BeginDate, EndDate:** Range filter for the transaction date.
+- **ReferenceNumber:** Exact match filter for the reference number.
 
 You can make a GET request to the endpoint **/sipay/api/transaction/GetByParameter** and pass the filter criteria as query parameters. The API will then return a list of transactions that match the provided filters.
 
