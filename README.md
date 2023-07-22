@@ -1,4 +1,4 @@
-# Sipay&Patika.dev .NET Bootcamp - Case #2: Transactin Filter APİ
+# Sipay&Patika.dev .NET Bootcamp - Case #2: Transactin Filter API
 
 This is a transaction API project that allows users to retrieve transactions based on various filtering criteria. The API exposes a GetByParameter endpoint in the TransactionController, which accepts query parameters to filter transactions based on specific criteria, such as account number, credit amount, debit amount, description, transaction date, and reference number.
 
